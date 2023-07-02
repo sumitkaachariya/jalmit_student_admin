@@ -79,34 +79,12 @@ class Member extends CI_Controller {
 
  public function mail_send($toemail){
 
-    $this->load->library('email');
-    $config = array();
-    $config['protocol'] = 'smtp';
-    $config['smtp_host'] = 'smtp.gmail.com';
-    $config['smtp_user'] = 'sumitkachariya03@gmail.com';
-    $config['smtp_pass'] = '@Sumit049';
-    $config['smtp_port'] = 465;
-    // $config['smtp_crypto'] = 'tls';
-    // $config['mailtype'] = 'html';
-    // $config['charset'] = 'iso-8859-1';
-    // $config['wordwrap'] = TRUE;
-    $this->email->initialize($config);
-    $this->email->set_newline("\r\n");
+    $subject = "My subject";
+    $txt = "Hello world!";
+    $headers = "From: sumitkachariya03@gmail.com" . "\r\n" .
+    "CC: sumitkachariya03@gmail.com";
 
-
-    $from_email = "sumitkachariya03@gmail.com";
-    //Load email library
-    $this->email->from($from_email, 'Identification');
-    $this->email->to($toemail);
-    $this->email->subject('Send Email Codeigniter');
-    $this->email->message('The email send using codeigniter library');
-    //Send mail
-    if($this->email->send()){
-        echo 'sent';
-    }else{
-        echo "<pre>";print_r($this->email->print_debugger());
-        echo 'not sent';
-    }
+    mail($toemail,$subject,$txt,$headers);
  }
 
 }
