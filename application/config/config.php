@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 if($_SERVER['HTTP_HOST']=='localhost:8080'){
 	$config['base_url'] = 'http://localhost:8080/jalmit_student_admin/';
 }else{
-	$config['base_url'] = 'https://parivarhrms.jalmitinfotech.com/';
+	$config['base_url'] = 'https://schoolerp.jalmitinfotech.com/';
 }
 /*
 |--------------------------------------------------------------------------
