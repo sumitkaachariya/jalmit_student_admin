@@ -73,17 +73,15 @@ class Member extends CI_Controller {
         'password' => md5($password),
         'status' => 0
     );
-    $this->mail_send($email);
+    $this->mail_send($email,$password);
 
  }
 
- public function mail_send($toemail){
-
-    $subject = "My subject";
-    $txt = "Hello world!";
+ public function mail_send($toemail,$password){
+    $subject = "Password";
+    $txt = 'Password: '. $password;
     $headers = "From: sumitkachariya03@gmail.com" . "\r\n" .
     "CC: sumitkachariya03@gmail.com";
-
     mail($toemail,$subject,$txt,$headers);
  }
 
