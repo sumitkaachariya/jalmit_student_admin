@@ -1,0 +1,91 @@
+body{
+  text-transform: capitalize;
+}
+select {
+  text-transform: capitalize;
+}
+select option {
+  text-transform: capitalize;
+}
+[class*=sidebar-dark-] {
+    background-color: #000000d9;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
+      background-color: #ED2C23;
+}
+.btn-primary{
+     background-color: #000000;
+    border-color: #000000;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  background-color: #000000;
+    border-color: #000000;
+}
+.btn-primary.focus, .btn-primary:focus{
+   background-color: #000000;
+    border-color: #000000;
+}
+.btn-primary:hover{
+  background-color: #ED2C23;
+    border-color: #ED2C23;
+}
+a {
+  color: #000;
+}
+a:hover{
+ color: #ED2C23;
+}
+.page-item.active .page-link{
+  background-color: #000000;
+  border-color: #000000;
+}
+.page-link:focus{
+      box-shadow: 0 0 0 0.2rem rgb(237 44 35 / 24%);
+}
+.form-control:focus{
+  border-color: #ed2c2366;
+}
+table.dataTable>thead .sorting:before, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_desc_disabled:before{
+  color: #ED2C23;
+}
+.bg-info{
+  background: transparent !important;
+    border: 1px solid #ed2c23;
+    color: #ed2c23 !important;
+}
+.page-link{
+  color: #ed2c23;
+}
+.page-link:hover{
+  color: #000;
+}
+.card-primary.card-outline{
+  border-top: 3px solid #ff0b00;
+}
+  
+.filter_card .card-body{
+  padding: 6px 20px;
+}
+.result_card .card-header{
+  background-color: #ed2c23 !important;
+}
+
+label.std_label {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+label.std_label span{
+  color: #ffffff;
+}
+.result_table_title{
+  border-bottom: 1px solid #ed2c23;
+    margin-bottom: 10px;
+}
+.percentage_rank{
+  color: #ed2c23;
+  font-weight: 700;
+}
+.rank{
+  font-weight: 700;
+  color: #ed2c23;
+}
