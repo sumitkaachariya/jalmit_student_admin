@@ -19,7 +19,7 @@ class Maintenance extends CI_Controller {
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
 	public function __construct()
-    {
+    { 
         parent::__construct(); 
 		$maintenance = maintenance();
         if($maintenance == 0){
